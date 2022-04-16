@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-auto';
+import node from '@sveltejs/adapter-node';
 import preprocess from 'svelte-preprocess';
 import tailwind from 'tailwindcss'
 import autoprefixer from 'autoprefixer'
@@ -17,7 +17,7 @@ const config = {
 	}),
 
 	kit: {
-		adapter: adapter(),
+		adapter: node(),
 
 		// Override http methods in the Todo forms
 		methodOverride: {
