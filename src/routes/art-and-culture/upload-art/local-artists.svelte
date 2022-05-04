@@ -36,7 +36,6 @@
 		{#if image}
 			<label class="text-left" for="title">Artwork Name</label>
 			<Input id="title" name="title" placeholder="Artwork Name" bind:value={title} />
-			{title}
 			<Button
 				on:click={() => {
 					uploadImage(title, image);
