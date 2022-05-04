@@ -31,12 +31,13 @@
 </div>
 <Menu bind:open />
 
-{#if $page.url.pathname === '/art-and-culture/upload-art/local-artists'}
-	<slot />
-{:else if !open}
-	<main class="p-5">
+<!-- {#if $page.url.pathname === '/art-and-culture/upload-art/local-artists'} -->
+{#if !open}
+	<main class="p-5 flex flex-col content-center">
 		<slot />
 	</main>
+{:else}
+	<slot />
 {/if}
 
 <style>

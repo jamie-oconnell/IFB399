@@ -1,9 +1,10 @@
 <script>
 	import { onMount } from 'svelte';
 	import CameraCapture from './CameraCapture.svelte';
-	import { getMediaStream } from '$lib/helpers/cameraHelper';
-	const cameraWidth = 500;
+	import { getMediaStream } from '$lib/util/cameraHelper';
+
 	const cameraHeight = 500;
+	const cameraWidth = 500;
 	let pictureUrl = null;
 	let imageCapture = null;
 	let mediaStreamPromise = null;
