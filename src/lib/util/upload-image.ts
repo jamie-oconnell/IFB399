@@ -14,7 +14,7 @@ export async function uploadImage(title: string, imgBase64) {
         title,
         image: imgData[1]
     };
-    await fetch(`/upload`, {
+    const res = await fetch(`/upload`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -22,4 +22,5 @@ export async function uploadImage(title: string, imgBase64) {
         },
         body: JSON.stringify(data)
     });
+    return res
 }

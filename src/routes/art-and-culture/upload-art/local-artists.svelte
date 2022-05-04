@@ -2,6 +2,7 @@
 	import Button from '$lib/components/Button.svelte';
 	import Heading from '$lib/components/Heading.svelte';
 	import Input from '$lib/components/Input.svelte';
+	import { goto } from '$app/navigation';
 	import { getBase64, uploadImage } from '$lib/util/upload-image';
 
 	let fileInput;
@@ -11,6 +12,13 @@
 
 	async function setImage(img) {
 		image = await getBase64(img);
+	}
+	async function confirmImage(title, img) {
+		const res = await uploadImage(title, img);
+		if (res.status === 200) {
+			alert('Image uploaded successfully');
+			goto('/art-and-culture/virtual-gallery');
+		}
 	}
 </script>
 
@@ -38,12 +46,13 @@
 			<Input id="title" name="title" placeholder="Artwork Name" bind:value={title} />
 			<Button
 				on:click={() => {
-					uploadImage(title, image);
+					confirmImage(title, image);
 				}}>CONFIRM</Button
 			>
 			<Button
 				on:click={() => {
 					image = null;
+					title = '';
 				}}>CLEAR FILE</Button
 			>
 		{/if}
@@ -65,7 +74,6 @@
 		display: flex;
 		flex-direction: column;
 		/* justify-content: space-between; */
-		height: 300px;
 	}
 	.image-upload {
 		display: flex;
@@ -78,5 +86,6 @@
 		border: 1px dashed #fff;
 		border-radius: 5px;
 		cursor: pointer;
+		height: 50vh;
 	}
 </style>

@@ -33,7 +33,7 @@
 
 <!-- {#if $page.url.pathname === '/art-and-culture/upload-art/local-artists'} -->
 {#if !open}
-	<main class="p-5 flex flex-col content-center">
+	<main class="p-5 flex flex-col items-center">
 		<slot />
 	</main>
 {:else}
