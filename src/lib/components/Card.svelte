@@ -21,5 +21,6 @@
 		border: 3px solid #fff;
 		text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.67);
 		font-size: 35px;
+		background-size: cover;
 	}
 </style>

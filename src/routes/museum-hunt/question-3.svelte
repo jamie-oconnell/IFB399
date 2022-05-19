@@ -21,6 +21,7 @@
 <style>
 	.container {
 		background-image: url('/images/Gypsum.png');
+		background-size: cover;
 		min-height: 100%;
 		height: 100vh;
 		background-repeat: no-repeat;
@@ -45,7 +46,7 @@
 	   color: black;
 	   border-radius: 25px;
 	   min-height: fit-content;
-	   font-size: 35px;
+	   font-size: 25px;
 	   box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.43);
     }
 </style>

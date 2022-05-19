@@ -15,6 +15,7 @@
 <style>
 	.container {
 		background-image: url('/images/T-rex.png');
+		background-size: cover;
 		min-height: 100%;
 		height: 100vh;
 		background-repeat: no-repeat;

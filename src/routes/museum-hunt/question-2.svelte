@@ -13,14 +13,15 @@
 	<div class="buttons">
 		<Button type="link" link="/museum-hunt/question-2-incorrect/">A) Carlos</Button>
         <Button type="link" link="/museum-hunt/question-2-incorrect/">B) Tank Mk.IV</Button>
-		<Button type="link" link="/museum-hunt/question-2-incorrect/">C) Mephisto</Button>
-		<Button type="link" link="/museum-hunt/question-2-correct/">D) Kampfwagen</Button>
+		<Button type="link" link="/museum-hunt/question-2-correct/">C) Mephisto</Button>
+		<Button type="link" link="/museum-hunt/question-2-incorrect/">D) Kampfwagen</Button>
 	</div>
 </div>
 
 <style>
 	.container {
-		background-image: url('/images/T-rex.png');
+		background-image: url('/images/Mephisto.jpg');
+		background-size: cover;
 		min-height: 100%;
 		height: 100vh;
 		background-repeat: no-repeat;

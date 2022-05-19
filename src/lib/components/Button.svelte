@@ -23,7 +23,7 @@
 		width: 100%;
 		height: 72px;
 		line-height: 43px;
-		font-size: 35px;
+		font-size: 25px;
 		color: rgb(65, 65, 65);
 		background-color: rgb(255, 255, 255);
 		border-radius: 23px;
