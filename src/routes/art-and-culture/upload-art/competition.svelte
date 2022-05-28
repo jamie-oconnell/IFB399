@@ -10,4 +10,4 @@
 	<Card image="images/Paintings.png" link="/art-and-culture/upload-art/competition/physical-competition">PAINTINGS</Card>
 </div>
 
-<Button type="link" link="/art-and-culture/upload-art/competition">GO BACK</Button>
+<Button type="link" link="/art-and-culture/upload-art">GO BACK</Button>

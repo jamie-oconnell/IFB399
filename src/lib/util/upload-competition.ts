@@ -19,7 +19,7 @@ export async function uploadCompetition(title: string, imgBase64, description: s
         Phone,
         Email
     };
-    const res = await fetch(`/upload`, {
+    const res = await fetch(`/compupload`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
