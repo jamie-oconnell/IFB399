@@ -1,20 +1,20 @@
 import { writeFileSync, readFile } from 'fs';
-import { destroy_component } from 'svelte/internal';
 
 export async function post({ request }) {
     try {
         const data = JSON.parse((await request.body.read()).toString());
 
+        console.log(data)
         const file = data['image'];
         const title = data['title'];
         const description = data['description'];
-        const FirstName = data['first name'];
-        const LastName = data['last name'];
-        const Phone = data['phone'];
-        const Email = data['email'];
+        const FirstName = data['FirstName'];
+        const LastName = data['LastName'];
+        const Phone = data['Phone'];
+        const Email = data['Email'];
     
         writeFileSync(`static/compuploads/${title}.png`, file, 'base64' );
-        addCompImage({ path: `/compuploads/${title}.png`, title: title, description : description, FirstName : FirstName, LastName : LastName, Phone : Phone, Email : Email })
+        addCompImage( `/compuploads/${title}.png`, title, description, FirstName, LastName, Phone, Email)
         return {
             status: 200,
         };
@@ -24,9 +24,8 @@ export async function post({ request }) {
 
 }
 
-function addCompImage({ path, title, description, FirstName, LastName, Phone, Email }) {
+function addCompImage( path, title, description, FirstName, LastName, Phone, Email ) {
     try {
-        
         readFile('static/compgallery.json', function (err, data) {
             const json = JSON.parse(data.toString())
             json.push({
@@ -39,7 +38,6 @@ function addCompImage({ path, title, description, FirstName, LastName, Phone, Em
                 "email" : Email
 
             })
-        
             writeFileSync('static/compgallery.json', JSON.stringify(json))
         })
 
