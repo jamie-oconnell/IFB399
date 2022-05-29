@@ -12,3 +12,6 @@ node_modules
 /static/compuploads
 /static/gallery.json
 /static/compgallery.json
+prisma/database.db
+prisma/database.db-journal
+prisma/migrations

@@ -5,7 +5,7 @@
 	let images = [];
 
 	onMount(async () => {
-		const res = await fetch(`/gallerydb`, {
+		const res = await fetch(`/api/local-art`, {
 			headers: {
 				'Content-Type': 'application/json',
 				Accept: 'application/json'
