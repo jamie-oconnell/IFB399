@@ -2,5 +2,5 @@ services:
   - type: web
     name: sveltekit
     env: node
-    buildCommand: npm install && npm run build
+    buildCommand: npm install && npx run prisma generate && npx run prisma migrate deploy && npm run build
     startCommand: node build/index.js
