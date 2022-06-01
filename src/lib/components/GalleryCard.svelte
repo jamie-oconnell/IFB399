@@ -2,6 +2,7 @@
 	export let image = '';
 	export let title = '';
 	export let link;
+	export let description = '';
 </script>
 
 <div>
@@ -10,6 +11,8 @@
 		<slot />
 	</a>
 	<div>{title}</div>
+	<hr>
+	<div>{description}</div>
 </div>
 
 <style>

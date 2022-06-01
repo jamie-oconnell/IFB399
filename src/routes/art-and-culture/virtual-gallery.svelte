@@ -35,7 +35,7 @@
 	<TabPanel>
 		<div class="gallery-grid">
 			{#each images as image}
-				<Card title={image.title} image={image.path} link="/temp" />
+				<Card title={image.title} image={image.path} />
 			{/each}
 		</div>
 		<div class='go-back'>
@@ -47,7 +47,7 @@
 	<TabPanel>
 		<div class="gallery-grid">
 			{#each compimages as image}
-				<Card title={image.title} image={image.path} link="/temp" />
+				<Card title={image.title} image={image.path} description={image.description} link="/temp" />
 			{/each}
 		</div>
 		<Button type="link" link="/art-and-culture">GO BACK</Button>
