@@ -56,7 +56,7 @@
     }
 
     .adjacent {
-        display: inline-block;
+        vertical-align: top;
     }
 
     .logo {
