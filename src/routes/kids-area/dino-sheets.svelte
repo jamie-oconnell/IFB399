@@ -5,11 +5,17 @@
 
 <Heading>DINOSAUR SHEETS</Heading>
 
-<div class="container p-5">
+<div>
     <div class="sheets">
-        <img src="/images/KidsArea/DinoSheet1.png" alt="Tyrannosaurus Rex">
-        <img src="/images/KidsArea/DinoSheet2.png" alt="Spinosuarus">
-        <img src="/images/KidsArea/DinoSheet3.png" alt="Stegosaurus">
+        <div class = "image">
+            <img src="/images/KidsArea/DinoSheet1.png" alt="Tyrannosaurus Rex">
+        </div>
+        <div class = "image">
+            <img src="/images/KidsArea/DinoSheet2.png" alt="Spinosuarus">
+        </div>
+        <div class = "image">
+            <img src="/images/KidsArea/DinoSheet3.png" alt="Stegosaurus">
+        </div>
     </div>
     <div>
         <Button type="link" link="/kids-area/categories/">GO BACK</Button>
@@ -17,7 +23,8 @@
 </div>
 
 <style>
-    .sheets {
-        padding-top: 30px;
+    .image {
+        padding-bottom: 15px;
+        margin-top: 20px;
     }
 </style>

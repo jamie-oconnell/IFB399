@@ -5,13 +5,21 @@
 
 <Heading>ABORIGINAL ART SHEETS</Heading>
 
-<div>
-    <picture>
+<div class="sheets">
+    <div class = "image">
         <img src="/images/KidsArea/AboriginalSheet1.png" alt="Cockatoo">
+    </div>
+    <div class = "image">
         <img src="/images/KidsArea/AboriginalSheet2.png" alt="Emu">
-    </picture>
-    
+    </div>
 </div>
 <div>
     <Button type="link" link="/kids-area/categories/">GO BACK</Button>
 </div>
+
+<style>
+    .image {
+        padding-bottom: 15px;
+        margin-top: 20px;
+    }
+</style>

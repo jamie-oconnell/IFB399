@@ -6,13 +6,25 @@
 <Heading>ANIMAL SHEETS</Heading>
 
 <div>
-    <picture>
-        <img src="/images/KidsArea/AnimalsSheet1.jpg" alt="Tigers">
-        <img src="/images/KidsArea/AnimalsSheet2.png" alt="Elephants">
-        <img src="/images/KidsArea/AnimalsSheet3.jpg" alt="Turtles">
-    </picture>
-    
+    <div class="sheets">
+        <div class = "image">
+            <img src="/images/KidsArea/AnimalsSheet1.jpg" alt="Tigers">
+        </div>
+        <div class = "image">
+            <img src="/images/KidsArea/AnimalsSheet2.png" alt="Elephants">
+        </div>
+        <div class = "image">
+            <img src="/images/KidsArea/AnimalsSheet3.jpg" alt="Turtles">
+        </div>
+    </div>
+    <div>
+        <Button type="link" link="/kids-area/categories/">GO BACK</Button>
+    </div>
 </div>
-<div>
-    <Button type="link" link="/kids-area/categories/">GO BACK</Button>
-</div>
+
+<style>
+    .image {
+        padding-bottom: 15px;
+        margin-top: 20px;
+    }
+</style>
