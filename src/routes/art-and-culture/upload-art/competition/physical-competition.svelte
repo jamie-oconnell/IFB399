@@ -27,7 +27,7 @@
 	}
 </script>
 
-<div class="container m-8 max-w-lg grid grid-cols-1 gap-4 place-content-center">
+<div class="container p-5 flex flex-col">
 	<Heading>Upload an image of your competition entry</Heading>
 	<div class="image-upload flex-1">
 		{#if image}
@@ -37,126 +37,52 @@
 		{/if}
 	</div>
 	<input
-		class="hidden"
-		id="file-to-upload"
-		type="file"
-		accept=".png,.jpg"
-		bind:files
-		bind:this={fileInput}
-		on:change={() => setImage(files[0])}
-	/>
-	<div class="m-8 max-w-lg grid grid-cols-2 gap-4 place-content-center">
-		{#if image}
-			<div class="flex flex-wrap -mx-3 mb-6 col-start-1 col-end-3">
-				<div class="w-full px-3">
-					<label class="block uppercase tracking-wide text-white-700 text-xs font-bold mb-2" for="">
-						Name of Piece
-					</label>
-					<input
-						class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-						id=""
-						type=""
-					/>
-					<p class="text-white-600 text-xs italic" />
-				</div>
-			</div>
-			<div class="flex flex-wrap -mx-3 mb-6 col-start-1 col-end-3">
-				<div class="w-full px-3">
-					<label class="block uppercase tracking-wide text-white-700 text-xs font-bold mb-2" for="">
-						Description of Piece
-					</label>
-					<input
-						class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-						id=""
-						type=""
-					/>
-					<p class="text-white-600 text-xs italic">
-						Please leave a description of your art piece, or your thoughts when making it
-					</p>
-				</div>
-			</div>
-			<div class="flex flex-wrap -mx-3 mb-6">
-				<div class="w-full px-3">
-					<label class="block uppercase tracking-wide text-white-700 text-xs font-bold mb-2" for="">
-						First Name
-					</label>
-					<input
-						class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-						id=""
-						type=""
-					/>
-				</div>
-			</div>
-			<div class="flex flex-wrap -mx-3 mb-6">
-				<div class="w-full px-3">
-					<label class="block uppercase tracking-wide text-white-700 text-xs font-bold mb-2" for="">
-						Last Name
-					</label>
-					<input
-						class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-						id=""
-						type=""
-					/>
-				</div>
-			</div>
-			<div class="flex flex-wrap -mx-3 mb-6 col-start-1 col-end-3">
-				<div class="w-full px-3">
-					<label class="block uppercase tracking-wide text-white-700 text-xs font-bold mb-2" for="">
-						Phone Number
-					</label>
-					<input
-						class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-						id=""
-						type=""
-					/>
-					<p class="text-white-600 text-xs italic">
-						This number will only be contacted to inform you of the competition
-					</p>
-				</div>
-			</div>
-			<div class="flex flex-wrap -mx-3 mb-6 col-start-1 col-end-3">
-				<div class="w-full px-3">
-					<label class="block uppercase tracking-wide text-white-700 text-xs font-bold mb-2" for="">
-						Email
-					</label>
-					<input
-						class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-						id=""
-						type=""
-					/>
-					<p class="text-white-600 text-xs italic">
-						This email will only be contacted to inform you of the competition
-					</p>
-				</div>
-			</div>
-			<div class="col-start-1 col-end-3">
-				<Button
-					on:click={() => {
-						confirmCompetition(title, image, description, FirstName, LastName, Phone, Email);
-					}}>CONFIRM</Button
-				>
-			</div>
-			<div class="col-start-1 col-end-3">
-				<Button
-					on:click={() => {
-						image = null;
-						title = '';
-					}}>CLEAR FILE</Button
-				>
-			</div>
-		{/if}
-		<div class="col-start-1 col-end-3">
-			<Button type="link" link="/art-and-culture/upload-art/competition">GO BACK</Button>
-		</div>
-	</div>
+	class="hidden"
+	id="file-to-upload"
+	type="file"
+	accept=".png,.jpg"
+	bind:files
+	bind:this={fileInput}
+	on:change={() => setImage(files[0])}
+/>
+<div class="buttons container p-5 flex flex-col">
+	{#if image}
+		<label class="text-left" for="title">Artwork Name</label>
+		<Input id="title" name="title" placeholder="Artwork Name" bind:value={title} />
+		<label class="text-left" for="title">First Name</label>
+		<Input id="title" name="title" placeholder="First Name" bind:value={FirstName} />
+		<label class="text-left" for="title">Last Name</label>
+		<Input id="title" name="title" placeholder="Last Name" bind:value={LastName} />
+		<label class="text-left" for="title">Description of Piece</label>
+		<Input id="title" name="title" placeholder="Description of Piece" bind:value={description} />
+		<label class="text-left" for="title">Phone Number</label>
+		<Input id="title" name="title" placeholder="Phone Number" bind:value={Phone} />
+		<label class="text-left" for="title">Email</label>
+		<Input id="title" name="title" placeholder="Email" bind:value={Email} />
+		<Button
+			on:click={() => {
+				confirmCompetition(title, image, description, FirstName, LastName, Phone, Email);
+			}}>CONFIRM</Button
+		>
+		<Button
+			on:click={() => {
+				image = null;
+				title = '';
+			}}>CLEAR FILE</Button
+		>
+	{/if}
+	<Button type="link" link="/art-and-culture/upload-art">GO BACK</Button>
 </div>
+</div>
+
+
 
 <style>
 	img {
 		/* width: 100%; */
-		max-width: calc(50vw - 10%);
+		max-width: calc(100vw - 10%);
 		/* height: 100%; */
-		max-height: 200px;
+		max-height: 400px;
 		/* object-fit: cover; */
 	}
 	.buttons {

@@ -4,7 +4,6 @@
 	import Input from '$lib/components/Input.svelte';
 	import { goto } from '$app/navigation';
 	import { getBase64, uploadCompetition } from '$lib/util/upload-image';
-	import PhysicalCompetition from './physical-competition.svelte';
 
 	let fileInput;
 	let image;
@@ -28,7 +27,7 @@
 	}
 </script>
 
-<div class="container m-8 max-w-lg grid grid-cols-1 gap-4 place-content-center">
+<div class="container p-5 flex flex-col">
 	<Heading>Upload an image of your competition entry</Heading>
 	<div class="image-upload flex-1">
 		{#if image}
@@ -37,8 +36,7 @@
 			<button on:click={() => fileInput.click()} class="upload-button">+ Select File</button>
 		{/if}
 	</div>
-</div>
-<input
+	<input
 	class="hidden"
 	id="file-to-upload"
 	type="file"
@@ -47,7 +45,7 @@
 	bind:this={fileInput}
 	on:change={() => setImage(files[0])}
 />
-<div class="buttons">
+<div class="buttons container p-5 flex flex-col">
 	{#if image}
 		<label class="text-left" for="title">Artwork Name</label>
 		<Input id="title" name="title" placeholder="Artwork Name" bind:value={title} />
@@ -73,16 +71,18 @@
 			}}>CLEAR FILE</Button
 		>
 	{/if}
-
 	<Button type="link" link="/art-and-culture/upload-art">GO BACK</Button>
 </div>
+</div>
+
+
 
 <style>
 	img {
 		/* width: 100%; */
-		max-width: calc(50vw - 10%);
+		max-width: calc(100vw - 10%);
 		/* height: 100%; */
-		max-height: 200px;
+		max-height: 400px;
 		/* object-fit: cover; */
 	}
 	.buttons {
