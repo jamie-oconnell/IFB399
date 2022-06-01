@@ -4,17 +4,16 @@
 
 <div class="container p-5">
     <div class="question">
-        <p class="feedback">Correct!</p>
+        <p class="feedback">Congratulations, you completed the Hunt! Explore the Museum to learn even more stuff.</p>
     </div>
 	<div class="buttons">
-		<Button type="link" link="/museum-hunt/finish">FINISH</Button>
-        <Button type="link" link="/museum-hunt/">GO BACK</Button>
+        <Button type="link" link="/museum-hunt/">FINISH</Button>
 	</div>
 </div>
 
 <style>
 	.container {
-		background-image: url('/images/Gypsum.png');
+		background-image: url('/images/Fireworks.png');
 		background-size: cover;
 		min-height: 100%;
 		height: 100vh;
