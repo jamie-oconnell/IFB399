@@ -7,4 +7,4 @@ import Button from "$lib/components/Button.svelte";
     <img src="/images/Map.jpg" alt="Floor Map">
 </div>
 <hr>
-<Button type="link" link="/kids-area/">GO BACK</Button>
+<Button type="link" link="/">GO BACK</Button>
