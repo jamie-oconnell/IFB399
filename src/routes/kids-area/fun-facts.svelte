@@ -4,6 +4,8 @@
     import Card from '$lib/components/Card.svelte';
 </script>
 
+<!--Different categories for fun facts accessible via clickable card components.-->
+
 <Heading>FUN FACTS</Heading>
 
 <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 mb-4">

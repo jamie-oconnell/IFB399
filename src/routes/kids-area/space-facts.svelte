@@ -3,6 +3,8 @@
     import Button from "$lib/components/Button.svelte";
 </script>
 
+<!--A simple, low fidelity html page to showcase the kind of content that could be included in this section.-->
+
 <Heading>SPACE FACTS</Heading>
 
 <div>

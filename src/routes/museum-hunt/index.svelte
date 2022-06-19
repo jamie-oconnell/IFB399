@@ -3,7 +3,7 @@
 	import Heading from '$lib/components/Heading.svelte';
 </script>
 
-
+<!--Landing page for the Museum Hunt feature of the site.-->
 
 <div class="container p-5">
 	<Heading>MUSEUM HUNT</Heading>
@@ -11,8 +11,6 @@
 		<Button type="link" link ="/museum-hunt/question-1">START HUNT</Button>
 	</div>
 </div>
-
-
 
 <style>
 	.container {

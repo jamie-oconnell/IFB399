@@ -3,6 +3,8 @@
 	import Heading from '$lib/components/Heading.svelte';
 </script>
 
+<!--This page prompts the user to answer a question through the use of html tags and svelte components (Buttons).-->
+
 <Heading>QUESTION 2</Heading>
 <div class="container p-5">
     <div class="question">

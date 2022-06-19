@@ -3,6 +3,9 @@
     import Button from "$lib/components/Button.svelte";
 </script>
 
+<!--Simple, low-fielity html page with links to external sites. An example of
+    potential functionality that could developed later.-->
+
 <Heading>GAMES</Heading>
 
 <div>

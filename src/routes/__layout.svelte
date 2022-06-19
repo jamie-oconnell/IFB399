@@ -2,7 +2,6 @@
 	import '../app.css';
 	import MenuIcon from '$lib/components/icons/Menu.svelte';
 	import Menu from '$lib/components/Menu.svelte';
-	import { page } from '$app/stores';
 	import Button from '$lib/components/Button.svelte';
 	import { afterNavigate } from '$app/navigation';
 
