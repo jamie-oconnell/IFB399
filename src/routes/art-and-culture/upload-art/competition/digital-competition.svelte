@@ -4,7 +4,7 @@
 	import Input from '$lib/components/Input.svelte';
 	import { goto } from '$app/navigation';
 	import { getBase64, uploadCompetition } from '$lib/util/upload-image';
-
+//allocating variables for the art uploading process
 	let fileInput;
 	let image;
 	let files;
@@ -18,6 +18,7 @@
 	async function setImage(img) {
 		image = await getBase64(img);
 	}
+//uploading the art image	
 	async function confirmCompetition(title, img, description, FirstName, LastName, Phone, Email) {
 		const res = await uploadCompetition(title, img, description, FirstName, LastName, Phone, Email);
 		if (res.status === 200) {
@@ -26,7 +27,7 @@
 		}
 	}
 </script>
-
+<!-- image selection -->
 <div class="container p-5 flex flex-col">
 	<Heading>Upload an image of your competition entry</Heading>
 	<div class="image-upload flex-1">
@@ -45,6 +46,7 @@
 	bind:this={fileInput}
 	on:change={() => setImage(files[0])}
 />
+<!-- Input form creation-->
 <div class="buttons container p-5 flex flex-col">
 	{#if image}
 		<label class="text-left" for="title">Artwork Name</label>
@@ -71,6 +73,7 @@
 			}}>CLEAR FILE</Button
 		>
 	{/if}
+<!-- back button -->
 	<Button type="link" link="/art-and-culture/upload-art">GO BACK</Button>
 </div>
 </div>

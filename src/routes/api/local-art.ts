@@ -13,7 +13,7 @@ export async function get() {
 		console.log(error);
 	}
 }
-
+// allocating the information saved from the art submission
 export async function post({ request }) {
 	let body = {};
 	let status = 500;
@@ -22,7 +22,7 @@ export async function post({ request }) {
 
 		const file = data['image'];
 		const title = data['title'];
-
+// allocating the save location for images uploaded
 		writeFileSync(`static/local_art_uploads/${title}.png`, file, 'base64');
 
 		body = await prisma.localArt.create({
