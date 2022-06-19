@@ -5,6 +5,9 @@
 
 <Heading>WORKSHEETS</Heading>
 
+<!--A page showing worksheet download pages categorically by age-appropriateness. Each link redirects
+	to the same example worksheet page.-->
+
 <div>
 	<a href="/worksheetdownload">
 		<img class="clickable" src="/images/Yr1.png" alt="Year 1 Worksheets" a="/worksheetdownload">

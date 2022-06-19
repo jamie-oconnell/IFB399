@@ -2,6 +2,8 @@
 	import Button from '$lib/components/Button.svelte';
 </script>
 
+<!--A page telling the user they have completed the hunt. Redirects them to the start through the use of a button.-->
+
 <div class="container p-5">
     <div class="question">
         <p class="feedback">Congratulations, you completed the Hunt! Explore the Museum to learn even more stuff.</p>

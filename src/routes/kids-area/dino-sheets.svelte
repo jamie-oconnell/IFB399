@@ -3,6 +3,8 @@
     import Button from "$lib/components/Button.svelte";
 </script>
 
+<!--A page to download colouring in sheets with placeholder buttons.-->
+
 <Heading>DINOSAUR SHEETS</Heading>
 
 <div>
@@ -17,6 +19,12 @@
             <img src="/images/KidsArea/DinoSheet3.png" alt="Stegosaurus">
         </div>
     </div>
+
+    <div>
+        <Button class="smallButtons">DOWNLOAD</Button>
+        <Button class="smallButtons">PRINT</Button>
+    </div>
+
     <div>
         <Button type="link" link="/kids-area/categories/">GO BACK</Button>
     </div>

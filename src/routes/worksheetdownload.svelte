@@ -3,6 +3,9 @@
     import Button from '$lib/components/Button.svelte';
 </script>
 
+<!--This page provides an example of the Worksheet download page. It shows the worksheet
+    along with placeholder buttons that showcase desired functionality.-->
+
 <Heading>EXAMPLE WORKSHEET</Heading>
 
 <div>

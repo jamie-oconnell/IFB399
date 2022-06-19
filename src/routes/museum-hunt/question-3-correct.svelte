@@ -2,6 +2,9 @@
 	import Button from '$lib/components/Button.svelte';
 </script>
 
+<!--This page gives the user feedback on their quiz attempt, allowing them to progress
+	or to quit.-->
+
 <div class="container p-5">
     <div class="question">
         <p class="feedback">Correct!</p>
