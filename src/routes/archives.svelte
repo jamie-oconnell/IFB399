@@ -2,9 +2,7 @@
 	import Heading from '$lib/components/Heading.svelte';
 	import Button from '$lib/components/Button.svelte';
 </script>
-
-<!--A placeholder page to describe potential archives functionality-->
-
+<!--Setting up a prototype page for 3D archive rendering -->
 <Heading>THE ARCHIVES</Heading>
 <body>
 	This page will allow users to view currently archived exhbits, or previously available exhibits that are no longer stored by the museum.

@@ -3,7 +3,7 @@
 	import Heading from '$lib/components/Heading.svelte';
 	import Button from '$lib/components/Button.svelte';
 </script>
-
+<!-- Creating the art index-->
 <Heading>ART & CULTURE</Heading>
 
 <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 mb-4">

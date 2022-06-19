@@ -13,7 +13,7 @@ export async function get() {
 		console.log(error);
 	}
 }
-
+// allocating the information saved from the art submission
 export async function post({ request }) {
 	let body = {};
 	let status = 500;
@@ -27,7 +27,7 @@ export async function post({ request }) {
 		const lastName = data['lastName'];
 		const phone = data['phone'];
 		const email = data['email'];
-
+// allocating the save location for images uploaded
 		writeFileSync(`static/compuploads/${title}.png`, file, 'base64');
 
 		body = await prisma.compEntry.create({
