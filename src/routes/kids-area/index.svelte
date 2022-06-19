@@ -1,6 +1,7 @@
 <script>
 	import Heading from '$lib/components/Heading.svelte';
 	import Card from '$lib/components/Card.svelte';
+	import Button from '$lib/components/Button.svelte';
 </script>
 
 <Heading>KIDS AREA</Heading>
@@ -10,3 +11,5 @@
 	<Card image="/images//KidsArea/FunFacts.png" link="/kids-area/fun-facts">FUN FACTS</Card>
 	<Card image="/images/KidsArea/GamesCover.png" link="/kids-area/games">GAMES</Card>
 </div>
+
+<Button type="link" link="/">GO BACK</Button>

@@ -2,6 +2,7 @@
 	import Heading from '$lib/components/Heading.svelte';
 	import Button from '$lib/components/Button.svelte';
 </script>
+
 <!--Setting up a prototype page for local events -->
 <Heading>Local Events</Heading>
 <body>
