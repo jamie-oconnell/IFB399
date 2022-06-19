@@ -1,5 +1,6 @@
 <script>
 	import Heading from '$lib/components/Heading.svelte';
+	import Button from '$lib/components/Button.svelte';
 </script>
 
 <Heading>WORKSHEETS</Heading>
@@ -23,6 +24,7 @@
 	<a href="/worksheetdownload">
 		<img class="clickable" src="/images/Yr6.png" alt="Year 6 Worksheets" a="/worksheetdownload">
 	</a>
+	<Button type="link" link="/">GO BACK</Button>
 </div>
 
 <style>

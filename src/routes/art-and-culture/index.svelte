@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Card from '$lib/components/Card.svelte';
 	import Heading from '$lib/components/Heading.svelte';
+	import Button from '$lib/components/Button.svelte';
 </script>
 
 <Heading>ART & CULTURE</Heading>
@@ -10,3 +11,5 @@
 	<Card image="/images/Events.png" link="/art-and-culture/events">EVENTS</Card>
 	<Card image="/images/UploadArt.png" link="/art-and-culture/upload-art">UPLOAD YOUR ART</Card>
 </div>
+
+<Button type="link" link="/">GO BACK</Button>
